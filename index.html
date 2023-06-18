@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy birth day</title>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wish your love ones</title>
+    <link rel="stylesheet" href="public/styles.css">
+    <link rel="stylesheet" href="public/new.css">
+</head>
+<body>
+<header>
+    <div class="headerall">
+    <nav>
+        <ul>
+            <li><a href="#">Wish</a></li>
+            <li><a href="#">Birthday</a></li>
+            <li><a href="#">Anniversery</a></li>
+            <li><a href="#">coming</a></li>
+        </ul>
+    </nav>
+    </div>
+
+</header>
+<h1 class="countdown">Rahul saini</h1>
+<div class="ballon_container">
+    <div class="balloon balloon1">H</div>
+    <div class="balloon balloon1">A</div>
+    <div class="balloon balloon1">P</div>
+    <div class="balloon balloon1">P</div>
+    <div class="balloon balloon1">Y</div>
+</div>
+
+<div class="balloon_container">
+    <div class="balloon balloon2">M</div>
+    <div class="balloon balloon2">A</div>
+    <div class="balloon balloon2">R</div>
+    <div class="balloon balloon2">R</div>
+    <div class="balloon balloon2">I</div>
+    <div class="balloon balloon2">A</div>
+    <div class="balloon balloon2">G</div>
+    <div class="balloon balloon2">E</div>
+    
+</div>
+    
+
+<div class="balloon_container">
+        <div class="balloon balloon3">D</div>
+        <div class="balloon balloon3">A</div>
+        <div class="balloon balloon3">Y</div>
+        
+        
+</div>
+<h1 style="color: blue;"><%=rahulsaini %></h1>
+<div class="chat-area">
+    <form class="form123" method="post" action="/">
+        <textarea name="changetheurl" class="inputarea" id="" cols="30" rows="1"></textarea>
+        <a href=""><button class="button123" type="submit">"click me</button></a>
+
+    </form>
+    </div>
+ <script>
+    var countdown = new Date("February 14,2023 00:00:00").getTime();
+      //update the count down every second
+    var x = setInterval(function(){
+    //get todays date and time
+        var now = new Date().getTime();
+        var distance = countdown-now;
+    //tme calculations for days,hours minutes,and seconds
+        var days = Math.floor(distance/(1000*60*60*24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        document.getElementsByClassName("countdown").innerHTML = days+"d" + hours+"h" +minutes+"m" +seconds+"s";
+        if(distance<0){
+            document.getElementById("demo").innerHTML = "";
+        }
+    },1000);
+    
+ </script>   
+</body>
+</html>
